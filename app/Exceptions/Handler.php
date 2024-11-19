@@ -3,6 +3,8 @@
 namespace App\Exceptions;
 
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+use Illuminate\Http\Request;
+use Symfony\Component\Routing\Exception\RouteNotFoundException;
 use Throwable;
 
 class Handler extends ExceptionHandler
@@ -34,6 +36,10 @@ class Handler extends ExceptionHandler
      */
     public function register()
     {
+        $this->renderable(function (RouteNotFoundException $e, Request $request) {
+            return response()->json(['message'=>"Token Informado não esta correto ou não existe."]);
+        });
+
         $this->reportable(function (Throwable $e) {
             //
         });

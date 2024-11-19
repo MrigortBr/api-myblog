@@ -3,26 +3,40 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Service\PostsService as ServicePostsService;
 
 class PostsController extends Controller
 {
-    public function create() {
-        return response('Olá mundo, "Create"');
+
+    protected $postsService;
+
+    public function __construct(ServicePostsService $postsService){
+        $this->postsService =  $postsService;
     }
 
-    public function show() {
-        return response('Olá mundo, "Show"');
+    public function create(Request $request) {
+        $this->postsService->create($request);
     }
 
-    public function read(){
-        return response('Olá mundo');
+    public function show(Request $request) {
+        $this->postsService->show($request);
     }
 
-    public function update(){
-        return response('Olá mundo, "Update"');
+    public function listById(Request $request, $id){
+        $this->postsService->listById($request, $id);
     }
 
-    public function delete(){
-        return response('Olá mundo, "Delete"');
+    public function listMyPosts(Request $request){
+        $this->postsService->listMyPosts($request);
     }
+
+    public function update(Request $request, $id){
+        $this->postsService->update($request, $id);
+    }
+
+    public function delete(Request $request, $idPost){
+        $this->postsService->delete($request, $idPost);
+    }
+
+
 }

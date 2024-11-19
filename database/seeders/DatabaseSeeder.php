@@ -19,11 +19,13 @@ class DatabaseSeeder extends Seeder
 
         $userName = '"igor"'; // Alterar o nome conforme desejado
 
-        User::create([
-            'name' => $userName,
-            'email' => 'usuario@example.com', // Email do usuário
-            'password' => Hash::make('123'), // Defina uma senha segura
-        ]);
+
+
+        // User::create([
+        //     'name' => $userName,
+        //     'email' => 'usuario@example.com', // Email do usuário
+        //     'password' => Hash::make('123'), // Defina uma senha segura
+        // ]);
 
         // \App\Models\User::factory(10)->create();
     }
