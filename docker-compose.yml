@@ -1,0 +1,13 @@
+version: '3.3'
+services:
+  database:
+    image: mysql
+    container_name: mysql
+    restart: always
+    environment:
+      MYSQL_DATABASE: 'myblog'
+      MYSQL_ROOT_PASSWORD: 'rootPWD'
+    ports:
+      - '3306:3306'
+    expose:
+      - '3306'
