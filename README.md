@@ -1,5 +1,5 @@
 # MyBlog API
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/MrigortBr/desafio-votacao/blob/main/LICENSE)![Build Passed](https://img.shields.io/badge/build-passing-brightgreen)
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/MrigortBr/api-myblog/blob/main/LICENSE)![Build Passed](https://img.shields.io/badge/build-passing-brightgreen)
 ## Objetivo
 Projeto passado pelo professor Emanuel Felix de Aguiar da cadeira de API com Laravel.
 
@@ -55,7 +55,7 @@ comentários).
         "laravel/sanctum": "^3.3",
         "laravel/tinker": "^2.7"
 
-Para mais detalhes das dependências veja o arquivo [package.json](https://github.com/MrigortBr/api-myblog/blob/main/package.json)
+Para mais detalhes das dependências veja o arquivo [package.json](https://github.com/MrigortBr/api-myblog/blob/development/package.json)
 
 ### Tecnologias
 
@@ -72,7 +72,7 @@ Para mais detalhes das dependências veja o arquivo [package.json](https://githu
 - **DBeaver**: Ferramenta de administração de banco de dados universal e gratuita.
 
 ## Endpoints da API
-Para utilizar de forma mais rapida todos os endpoints basta utilizar a [base](https://github.com/MrigortBr/api-myblog/blob/main/MyBlog.postman_collection.json) para o [postman](https://www.postman.com/downloads/).
+Para utilizar de forma mais rapida todos os endpoints basta utilizar a [base](https://github.com/MrigortBr/api-myblog/blob/development/MyBlog.postman_collection.json) para o [postman](https://www.postman.com/downloads/).
 
 A API expõe os seguintes endpoints:
 
